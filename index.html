@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-S3-M15</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-S3-TM15</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 15: Estilizando mi Widget</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 15 - 3o de Secundaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,251 +38,408 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Esta misión se centra en el diseño estético con CSS y el rol de la IA como consultora de diseño.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-            <!-- SECCIÓN "DE UN VISTAZO" -->
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos:</strong>
-                                    <ul>
-                                        <li>Que los estudiantes profundicen en sus habilidades de CSS, aprendiendo a aplicar estilos más avanzados.</li>
-                                        <li>Que apliquen principios básicos de diseño (color, tipografía) para mejorar la estética y usabilidad de sus widgets.</li>
-                                        <li>Que utilicen Vibe Coding para que Xolo, como "consultor de diseño", sugiera y genere código CSS.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
-                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
-                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
-                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
-                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Un Plugin de ThingSpeak con un widget "re-diseñado", mostrando un uso intencionado de CSS para aplicar una paleta de colores, tipografía y otros estilos visuales.</li>
-                                        <li>Comprensión demostrada del proceso de diseño iterativo y la depuración de estilos CSS.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Cuentas de estudiante para ThingSpeak con un widget funcional de la misión anterior.</li>
-                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
-                                        <li>Acceso a un selector de colores web o a paletas de diseño (ej. Coolors, Adobe Color) como recurso de apoyo.</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
-                                            <ul>
-                                                <li>Asegurar que los estudiantes tengan su widget de la Misión 14.5 listo para ser re-diseñado.</li>
-                                                <li>Tener a mano los enlaces a herramientas de diseño como Coolors para compartirlos.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar los principios de Teoría del Color y Tipografía. Estar preparado para guiar la depuración de CSS, incluyendo problemas con fuentes web.</li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener una versión "antes" (simple) y "después" (diseño 'dark mode') del widget de termómetro para ilustrar el poder del re-diseño.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> Usar CSS básico e integración HTML/CSS para realizar iteraciones visuales en dashboards y comprender los principios de diseño de dashboards, el rol de la IA como consultora y el diseño centrado en la comprensión.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame qué es CSS y cómo se conecta con mi HTML (selectores básicos y propiedades comunes). Guíame con 3 principios de dashboard para estudiantes: legibilidad (tipografía/tamaño), jerarquía (título vs dato), y consistencia (espaciado y alineación). Luego acompáñame a pedir a la IA sugerencias de estilo como “consultora”: cómo describir la vibe, cómo evaluar si el CSS ayuda o estorba, y cómo evitar “decoración que confunde”.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Principios de Dashboard: Reglas de diseño para que la información sea fácil de leer y entender de un vistazo, usando jerarquía y legibilidad.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar CSS básico para mejorar el aspecto visual y la organización de un tablero de datos.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes tipografías, colores y espaciados para entender cómo afectan la claridad de los datos.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Micro:Bit (1 por cada 2 alumnos)</label>
+                        <label><input type="checkbox"> Smart Science IOT Kit + Sensores extra (1 por cada 2 alumnos)</label>
+                        <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/)</label>
+                        <label><input type="checkbox"> Acceso a Thingspeak (https://thingspeak.mathworks.com/)</label>
+                        <label><input type="checkbox"> Cables de conexión micro-USB</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
+                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'IOT' o 'Smart Science' → Agregar</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular los sensores con delicadeza, no mojar, verificar conexiones y desconectar al terminar.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre CSS y principios de diseño de dashboards (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si el widget no muestra cambios:</strong> Verificar que el archivo CSS esté correctamente vinculado al HTML. Revisar que los nombres de las clases coincidan.</li>
+                            <li><strong>Si los datos no llegan a Thingspeak:</strong> Comprobar la conexión Wi-Fi del Micro:Bit y que la API Key sea la correcta.</li>
+                            <li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer el tono de la sesión, activar la IA y presentar el rol del diseño de producto.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Buenos días, diseñadores. Ya tienen widgets funcionales. Hoy, vamos a darles alma. Vamos a pasar de la funcionalidad a la estética, de la ingeniería al diseño. Un buen diseño no solo es bonito, hace que la información sea más fácil y agradable de consumir. Hoy se convertirán en diseñadores de producto.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy Ana, perfil Comunicador, y hoy quiero que mi widget no solo informe, sino que también sea visualmente atractivo.'</strong> Esto posicionará a Xolo como su director de arte digital. Procedan.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy le daremos un estilo profesional y claro a sus tableros de datos!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre CSS y principios de diseño de dashboards.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A usar CSS para que sus datos sean fáciles de entender y se vean increíbles.</p>
+                        <p><strong>Aplicación real:</strong> Los analistas de datos en empresas tecnológicas usan CSS para crear tableros que permiten tomar decisiones rápidas mediante la visualización clara.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 2 minutos</h2>
-                <p>Clarificar la meta de aprendizaje enfocada en el diseño visual y la aplicación de principios estéticos.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: "I Can Statement" de Diseño Visual</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo el CSS cambia el color, tamaño y posición de los elementos en pantalla.</li>
+                            <li>Introduce el concepto de jerarquía visual para destacar los datos más importantes.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar propiedades CSS para mejorar la legibilidad.</li>
+                            <li>Aprender sobre los principios de diseño de dashboards.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">La meta de hoy es refinar su sentido del diseño. Al finalizar, podrán afirmar: <strong>'Yo puedo aplicar principios de diseño como color y tipografía para re-diseñar una interfaz, utilizando CSS para mejorar su estética y usabilidad.'</strong></p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar CSS para mejorar dashboards y comprender la jerarquía visual.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a dar un paso gigante en cómo presentamos nuestra información. Vamos a aprender CSS, que es el lenguaje que le da estilo a la web. Por favor, abran su chat con XOLO y simplemente salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre cómo conectar CSS con su HTML y cómo hacer que sus datos se vean profesionales. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Aprovechen para preguntarle cómo hacer que un dato destaque sobre el resto.</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: A.I. GYM (Principios de Diseño) ⏰ 10 minutos</h2>
-                <p>Facilitar una sesión de aprendizaje sobre los principios de diseño visual y el rol de la IA como consultora.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
-                            <p>(Proyectar Diapositiva 4 y 5) El facilitador dirige a los alumnos para que aprendan sobre diseño con Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Iniciamos el A.I. GYM. Su aprendizaje con Xolo hoy es sobre el 'lenguaje' del diseño. Primero, pregunten: <strong>'Xolo, explícame la teoría del color y la importancia de la tipografía en el diseño de interfaces.'</strong> Luego, exploren la colaboración con IA: <strong>'Ahora, explícame cómo una IA puede actuar como una "consultora de diseño" para sugerir colores o fuentes.'</strong></p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
-                            <p>El facilitador circula, refuerza conceptos y sugiere preguntas de profundización.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los Micro:Bits y Kits Smart Science conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique estilos CSS efectivos.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar CSS en su widget.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Conectar su Micro:Bit a Thingspeak y probar la visualización.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a definir la vibe visual de mi widget (ej. “industrial”, “salud”, “gaming”, “minimal”). Luego guíame para pedir a la IA un CSS simple que mejore jerarquía (título/dato/unidad), espaciado y contraste. Indícame un plan de mejora en 2 iteraciones: versión 1 (limpia) → versión 2 (más identidad). Finalmente, dime cómo revisar que el diseño no sacrifica claridad por estilo."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Mientras circula) "La idea de la IA como consultora es poderosa. Para probarla, denle un reto a Xolo. Pídanle: <strong>'Xolo, sugiéreme una paleta de colores para una 'vibe' energética y divertida.'</strong> O, <strong>'Sugiéreme una combinación de dos fuentes, una para títulos y otra para texto, que transmita seriedad y profesionalismo.'</strong> Vean qué opciones les da."</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El color del texto resalta lo suficiente sobre el fondo?</li>
+                            <li>¿Qué pasa si el tamaño de la fuente es muy pequeño para leerse a distancia?</li>
+                            <li>¿Funciona igual el diseño con un fondo oscuro vs un fondo claro?</li>
+                            <li>¿Cómo ayuda la jerarquía visual a que un usuario entienda tu dashboard en menos de 5 segundos?</li>
+                            <li>¿En qué momentos sentiste que la IA actuó como una consultora y no solo como un generador de código?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a pasar de un simple número en pantalla a un widget con personalidad. El flujo es: idear una 'vibe' con XOLO, obtener el código CSS, pasarlo a su proyecto y experimentar. Por ejemplo, podrían hacer un widget con estilo 'gaming' para monitorear la temperatura de su estación de juego. Recuerden las preguntas de experimentación: ¿se lee bien? ¿la decoración estorba? Conforme tengan su diseño listo en el simulador, les entregaré el hardware. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar el código CSS o la conexión.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con el estilo básico. ¿Puedes enseñarme cómo hacer que mi widget cambie de color automáticamente si el sensor detecta un valor peligroso usando CSS dinámico?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark (Re-diseño de Widget) ⏰ 22 minutos</h2>
-                <p>Los estudiantes re-diseñan sus widgets existentes, aplicando principios de diseño y CSS avanzado en parejas.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
-                             <p>(Proyectar Diapositiva 6) El facilitador presenta el desafío de re-diseño y da la instrucción de formar parejas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, su misión de diseño. Formen sus parejas. Tomen uno de los widgets que ya crearon en la misión anterior. Su objetivo es **re-diseñarlo** para hacerlo más claro, más profesional y más atractivo. El HTML probablemente se quedará igual; el foco hoy es el CSS.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Diseño de la "Vibe" Estética y Generación de Código</h3>
-                            <p>(Proyectar Diapositiva 7) Las parejas definen una nueva dirección de arte, la comunican a Xolo y reciben el nuevo CSS.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Definan una nueva 'vibe' estética para su widget. ¿Será 'moderno y minimalista', 'retro y divertido', 'corporativo y serio'? Describan esta visión a Xolo para que genere el CSS que la materialice. Por ejemplo: <strong>'Xolo, queremos re-diseñar nuestro termómetro con una vibe de "dark mode" elegante. Fondo casi negro, texto claro, un color de acento cian brillante y un efecto de brillo sutil.'</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Implementación y Depuración Visual</h3>
-                             <p>(Proyectar Diapositiva 8 y 9) Las parejas implementan el nuevo CSS y depuran problemas de estilo y fuentes.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué elementos visuales ayudan a entender mejor los datos.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué propiedades CSS mejoraron más la claridad de tu dashboard? ¿Qué te sorprendió del proceso?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Implementen su nuevo CSS en el Plugin de ThingSpeak. El desafío aquí es la sutileza. Un pequeño cambio en un código de color o en el grosor de una fuente puede tener un gran impacto. Jueguen con los valores. Si una fuente no se aplica como esperan, descríbanle el problema a Xolo. Él les explicará sobre las fuentes 'web-safe' y por qué algunas fuentes personalizadas no funcionan sin ser importadas.</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi dashboard usa un estilo "vibe" para mostrar los datos. Me sorprendió que el espaciado cambiara tanto la facilidad de lectura."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM (Reflexión) ⏰ 5 minutos</h2>
-                <p>El facilitador modera una reflexión final enfocada en el impacto del diseño visual.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
-                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Miren su widget re-diseñado. Individualmente, un minuto para pensar: ¿Qué emoción o sensación transmite ahora que antes no transmitía? ¿Confianza, urgencia, calma, modernidad?</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
-                            <p>Los alumnos discuten la importancia del diseño en productos cotidianos.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos: ¿Por qué el diseño visual es tan importante en las aplicaciones y productos que usan todos los días, como sus apps de música o redes sociales?</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
-                            <p>Algunas parejas comparten su re-diseño y el facilitador cierra la sesión.</p>
-                        </div>
-                        <div class="collapsible-content">
-                                <p class="dialogue assistant">Escuchemos a algunas parejas. Muestren su 'antes y después' y expliquen una decisión de diseño que hizo que su widget fuera más efectivo o atractivo. (Escuchar respuestas). Han aprendido que el código no solo es para la lógica, también es para la belleza y la comunicación. Han actuado como diseñadores de UI/UX. Esta fusión de habilidades técnicas y de diseño es lo que distingue a los grandes creadores de productos. Están listos para construir una réplica funcional completa de su sistema: un Gemelo Digital.</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
